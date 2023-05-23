@@ -1,0 +1,13 @@
+C:\Users\jadg13\source\repos\MonitoresUCA\MonitoresUCA\bin\Debug\MonitoresUCA.exe.config
+C:\Users\jadg13\source\repos\MonitoresUCA\MonitoresUCA\bin\Debug\MonitoresUCA.exe
+C:\Users\jadg13\source\repos\MonitoresUCA\MonitoresUCA\bin\Debug\MonitoresUCA.pdb
+C:\Users\jadg13\source\repos\MonitoresUCA\MonitoresUCA\bin\Debug\MonitoresUCA.xml
+C:\Users\jadg13\source\repos\MonitoresUCA\MonitoresUCA\obj\Debug\MonitoresUCA.vbprojAssemblyReference.cache
+C:\Users\jadg13\source\repos\MonitoresUCA\MonitoresUCA\obj\Debug\MonitoresUCA.FrmCiudad.resources
+C:\Users\jadg13\source\repos\MonitoresUCA\MonitoresUCA\obj\Debug\MonitoresUCA.Resources.resources
+C:\Users\jadg13\source\repos\MonitoresUCA\MonitoresUCA\obj\Debug\MonitoresUCA.vbproj.GenerateResource.cache
+C:\Users\jadg13\source\repos\MonitoresUCA\MonitoresUCA\obj\Debug\MonitoresUCA.vbproj.CoreCompileInputs.cache
+C:\Users\jadg13\source\repos\MonitoresUCA\MonitoresUCA\obj\Debug\MonitoresUCA.exe
+C:\Users\jadg13\source\repos\MonitoresUCA\MonitoresUCA\obj\Debug\MonitoresUCA.xml
+C:\Users\jadg13\source\repos\MonitoresUCA\MonitoresUCA\obj\Debug\MonitoresUCA.pdb
+C:\Users\jadg13\source\repos\MonitoresUCA\MonitoresUCA\obj\Debug\MonitoresUCA.Form1.resources

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MonitoresUCA", "MonitoresUCA\MonitoresUCA.vbproj", "{072C8867-18B4-477C-AB3F-1E6531B6AD10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{072C8867-18B4-477C-AB3F-1E6531B6AD10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{072C8867-18B4-477C-AB3F-1E6531B6AD10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{072C8867-18B4-477C-AB3F-1E6531B6AD10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{072C8867-18B4-477C-AB3F-1E6531B6AD10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C328984C-A0D6-4BD1-839E-B3540D866594}
+	EndGlobalSection
+EndGlobal
