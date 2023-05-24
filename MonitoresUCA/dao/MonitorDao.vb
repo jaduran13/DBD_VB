@@ -89,7 +89,7 @@ Public Class MonitorDao
     Public Function MostrarRegistros() As DataSet
         Dim ds As New DataSet
         Try
-            Dim tsql As String = "SELECT Monitor.id, Monitor.idUca, Monitor.primerNombre, Monitor.segundoNombre, Monitor.primerApellido, Monitor.segundoApellido, Monitor.fechaNac, Monitor.idCiudad, Ciudad.nombre as 'nombreCiudad', Monitor.direccion, Monitor.email, Monitor.idMateria, Materia.nombre AS 'nombreMateria', Monitor.observaciones, Monitor.estado FROM Ciudad INNER JOIN Materia ON Ciudad.id = Materia.id INNER JOIN Monitor ON Ciudad.id = Monitor.idCiudad AND Materia.id = Monitor.idMateria"
+            Dim tsql As String = "SELECT Monitor.id, Monitor.idUca, Monitor.primerNombre, Monitor.segundoNombre, Monitor.primerApellido, Monitor.segundoApellido, Monitor.fechaNac, Monitor.idCiudad, Ciudad.nombre as 'nombreCiudad', Monitor.direccion, Monitor.email, Monitor.idMateria, Materia.nombre AS 'nombreMateria', Monitor.observaciones, Monitor.estado FROM Monitor INNER JOIN Materia ON Monitor.idMateria = Materia.id INNER JOIN Ciudad ON Ciudad.id = Monitor.idCiudad AND Materia.id = Monitor.idMateria"
             Dim conn As New SqlConnection(strConn)
             Dim da As New SqlDataAdapter(tsql, conn)
             da.Fill(ds)
@@ -101,7 +101,7 @@ Public Class MonitorDao
     Public Function ListarMonitores() As DataSet
         Dim ds As New DataSet
         Try
-            Dim tsql As String = "SELECT Monitor.idUca, Monitor.primerNombre, Monitor.segundoNombre, Monitor.primerApellido, Monitor.segundoApellido, Monitor.fechaNac, Ciudad.nombre AS Ciudad, Monitor.email, Materia.nombre AS Materia FROM Ciudad INNER JOIN Materia ON Ciudad.id = Materia.id INNER JOIN Monitor ON Ciudad.id = Monitor.idCiudad AND Materia.id = Monitor.idMateria"
+            Dim tsql As String = "SELECT Monitor.idUca, Monitor.primerNombre + N' ' + Monitor.segundoNombre + N' ' + Monitor.primerApellido + N' ' + Monitor.segundoApellido as N'Monitor', convert(varchar(10), Monitor.fechaNac, 103) as N'FechaNac', Ciudad.nombre AS Ciudad, Monitor.email, Materia.nombre AS Materia FROM Monitor INNER JOIN Ciudad ON Ciudad.id = Monitor.idCiudad INNER JOIN Materia ON Materia.id = Monitor.idMateria AND Materia.id = Monitor.idMateria"
             Dim conn As New SqlConnection(strConn)
             Dim da As New SqlDataAdapter(tsql, conn)
             da.Fill(ds)

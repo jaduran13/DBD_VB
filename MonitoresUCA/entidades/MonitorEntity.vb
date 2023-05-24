@@ -6,10 +6,10 @@
     Private _primerApellido As String
     Private _segundoApellido As String
     Private _fechaNac As Date
-    Private _ciudad As CiudadEntity
+    Private _ciudad As New CiudadEntity
     Private _direccion As String
     Private _email As String
-    Private _materia As MateriaEntity
+    Private _materia As New MateriaEntity
     Private _observaciones As String
 
     Public Sub New()

@@ -69,7 +69,7 @@ Public Class MateriaDao
 
     End Function
 
-    Private Function MostrarRegistros() As DataSet
+    Public Function MostrarRegistros() As DataSet
         Dim ds As New DataSet
         Try
             Dim tsql As String = "Select * from Materia"
