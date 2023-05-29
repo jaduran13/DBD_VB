@@ -49,7 +49,7 @@ Partial Class FrmCiudad
         'BtnNuevo
         '
         Me.BtnNuevo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BtnNuevo.Image = Global.MonitoresUCA.My.Resources.Resources._new
+        Me.BtnNuevo.Image = Global.MonitoresUCA.My.Resources.Resources.Nuevo
         Me.BtnNuevo.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.BtnNuevo.Name = "BtnNuevo"
         Me.BtnNuevo.Size = New System.Drawing.Size(23, 22)
@@ -58,7 +58,7 @@ Partial Class FrmCiudad
         'BtnGuardar
         '
         Me.BtnGuardar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BtnGuardar.Image = Global.MonitoresUCA.My.Resources.Resources.save
+        Me.BtnGuardar.Image = Global.MonitoresUCA.My.Resources.Resources.Guardar
         Me.BtnGuardar.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.BtnGuardar.Name = "BtnGuardar"
         Me.BtnGuardar.Size = New System.Drawing.Size(23, 22)
@@ -67,7 +67,8 @@ Partial Class FrmCiudad
         'BtnEditar
         '
         Me.BtnEditar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BtnEditar.Image = Global.MonitoresUCA.My.Resources.Resources.edit
+        Me.BtnEditar.Enabled = False
+        Me.BtnEditar.Image = Global.MonitoresUCA.My.Resources.Resources.Editar
         Me.BtnEditar.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.BtnEditar.Name = "BtnEditar"
         Me.BtnEditar.Size = New System.Drawing.Size(23, 22)
@@ -76,7 +77,8 @@ Partial Class FrmCiudad
         'BtnEliminar
         '
         Me.BtnEliminar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BtnEliminar.Image = Global.MonitoresUCA.My.Resources.Resources.delete
+        Me.BtnEliminar.Enabled = False
+        Me.BtnEliminar.Image = Global.MonitoresUCA.My.Resources.Resources.Eliminar
         Me.BtnEliminar.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.BtnEliminar.Name = "BtnEliminar"
         Me.BtnEliminar.Size = New System.Drawing.Size(23, 22)

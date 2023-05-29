@@ -14,6 +14,9 @@
 
     Private Sub BtnNuevo_Click(sender As Object, e As EventArgs) Handles BtnNuevo.Click
         TbNombre.Clear()
+        BtnEditar.Enabled = False
+        BtnEliminar.Enabled = False
+        BtnGuardar.Enabled = True
         TbNombre.Focus()
     End Sub
 
@@ -74,5 +77,11 @@
         ciudadAct.Nombre = DgvRegistros.Rows(fila).Cells(1).Value
         ciudadAct.Estado = DgvRegistros.Rows(fila).Cells(2).Value
         TbNombre.Text = ciudadAct.Nombre
+        BtnGuardar.Enabled = False
+        BtnEditar.Enabled = True
+        BtnEliminar.Enabled = True
+        TbNombre.Focus()
     End Sub
+
+
 End Class
