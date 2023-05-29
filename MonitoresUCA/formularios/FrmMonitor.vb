@@ -81,10 +81,33 @@
         MostrarRegistros()
     End Sub
 
+    Sub DiseñoGrid()
+        'Ocultar filas
+        DgvRegistros.Columns(0).Visible = False
+        DgvRegistros.Columns(7).Visible = False
+        DgvRegistros.Columns(11).Visible = False
+        DgvRegistros.Columns(14).Visible = False
+        'Poner titulos o encabezados
+        DgvRegistros.Columns(1).HeaderText = "CODIGO UCA"
+        DgvRegistros.Columns(2).HeaderText = "PRIMER NOMBRE"
+        DgvRegistros.Columns(3).HeaderText = "SEGUNDO NOMBRE"
+        DgvRegistros.Columns(4).HeaderText = "PRIMER APELLIDO"
+        DgvRegistros.Columns(5).HeaderText = "SEGUNDO APELLIDO"
+        DgvRegistros.Columns(6).HeaderText = "CUMPLEAÑO"
+        DgvRegistros.Columns(8).HeaderText = "CIUDAD"
+        DgvRegistros.Columns(9).HeaderText = "DIRECCION"
+        DgvRegistros.Columns(10).HeaderText = "EMAIL"
+        DgvRegistros.Columns(11).HeaderText = "TELEFONO"
+        DgvRegistros.Columns(12).HeaderText = "MATERIA"
+        DgvRegistros.Columns(13).HeaderText = "OBSERVACIONES"
+
+    End Sub
+
     Sub MostrarRegistros()
         Try
             DgvRegistros.DataSource = dMonitor.MostrarRegistros.Tables(0)
             DgvRegistros.Refresh()
+            DiseñoGrid()
             GbRegistros.Text = "Registros almacenados: " & DgvRegistros.Rows.Count
         Catch ex As Exception
 
