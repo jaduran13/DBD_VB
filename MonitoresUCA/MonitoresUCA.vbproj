@@ -197,6 +197,7 @@
     <Content Include="png\print.png" />
     <Content Include="png\save.png" />
     <Content Include="png\uca.ico" />
+    <Content Include="ScriptBd\ScriptBDMonitor.sql" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

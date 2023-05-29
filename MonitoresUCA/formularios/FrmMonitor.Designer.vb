@@ -254,15 +254,15 @@ Partial Class FrmMonitor
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(491, 24)
+        Me.Label3.Location = New System.Drawing.Point(481, 24)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(79, 13)
+        Me.Label3.Size = New System.Drawing.Size(93, 13)
         Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Primer Nombre:"
+        Me.Label3.Text = "Segundo Nombre:"
         '
         'TxtPrimerN
         '
-        Me.TxtPrimerN.Location = New System.Drawing.Point(299, 23)
+        Me.TxtPrimerN.Location = New System.Drawing.Point(281, 21)
         Me.TxtPrimerN.Name = "TxtPrimerN"
         Me.TxtPrimerN.Size = New System.Drawing.Size(176, 20)
         Me.TxtPrimerN.TabIndex = 3
@@ -270,7 +270,7 @@ Partial Class FrmMonitor
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(214, 23)
+        Me.Label2.Location = New System.Drawing.Point(196, 21)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(79, 13)
         Me.Label2.TabIndex = 2

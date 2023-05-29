@@ -28,6 +28,7 @@ Public Class MonitorDao
             End If
             cmd.Connection.Close()
         Catch ex As Exception
+            MsgBox(ex.Message)
             flag = False
         End Try
         Return flag
