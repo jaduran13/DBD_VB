@@ -26,3 +26,4 @@ C:\Users\Administrador\Source\Repos\DBD_VB\MonitoresUCA\obj\Debug\MonitoresUCA.v
 C:\Users\Administrador\Source\Repos\DBD_VB\MonitoresUCA\obj\Debug\MonitoresUCA.exe
 C:\Users\Administrador\Source\Repos\DBD_VB\MonitoresUCA\obj\Debug\MonitoresUCA.xml
 C:\Users\Administrador\Source\Repos\DBD_VB\MonitoresUCA\obj\Debug\MonitoresUCA.pdb
+C:\Users\Administrador\source\repos\DBD_VB\MonitoresUCA\obj\Debug\MonitoresUCA.FrmMateria.resources

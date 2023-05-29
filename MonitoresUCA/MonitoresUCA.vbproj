@@ -151,6 +151,9 @@
     <EmbeddedResource Include="formularios\FrmCiudad.resx">
       <DependentUpon>FrmCiudad.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FrmMateria.resx">
+      <DependentUpon>FrmMateria.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formularios\FrmMonitor.resx">
       <DependentUpon>FrmMonitor.vb</DependentUpon>
     </EmbeddedResource>
