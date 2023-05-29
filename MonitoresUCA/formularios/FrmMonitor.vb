@@ -91,4 +91,31 @@
         End Try
     End Sub
 
+    Private Sub BtnEditar_Click(sender As Object, e As EventArgs) Handles BtnEditar.Click
+        Try
+            Dim monitor As New MonitorEntity
+            monitor.IdUCA = TxtIDUca.Text
+            monitor.PrimerNombre = TxtPrimerN.Text
+            monitor.SegundoNombre = TxtSegundoN.Text
+            monitor.PrimerApellido = TxtPrimerA.Text
+            monitor.SegundoApellido = TxtSegundoA.Text
+            monitor.FechaNac = DtpFechaNac.Value
+            monitor.Ciudad.Id = CmbCiudad.SelectedValue
+            monitor.Ciudad.Nombre = CmbCiudad.Text
+            monitor.Direccion = TxtDireccion.Text
+            monitor.Email = TxtEmail.Text
+            monitor.Materia.Id = CmbMateria.SelectedValue
+            monitor.Materia.Nombre = CmbMateria.Text
+            monitor.Observaciones = TxtObservacion.Text
+
+            If (dMonitor.EditarRegistro(monitor) = True) Then
+                MsgBox("Registro modificado satisfactoriamente.", MsgBoxStyle.Information, "Monitores")
+            Else
+                MsgBox("No se pudo modificar el registro...", MsgBoxStyle.Exclamation, "Monitores")
+            End If
+        Catch ex As Exception
+            MsgBox("Error al guardar registro: " & ex.Message, MsgBoxStyle.Critical, "Monitores")
+        End Try
+        MostrarRegistros()
+    End Sub
 End Class
