@@ -248,6 +248,26 @@ SELECT id, idUca, primerNombre, segundoNombre, primerApellido, segundoApellido, 
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RptMonitorXCiudadTableAdapter" GeneratorDataComponentClassName="RptMonitorXCiudadTableAdapter" Name="RptMonitorXCiudad" UserDataComponentName="RptMonitorXCiudadTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="StrConexion (MySettings)" DbObjectName="jadgDB2023.dbo.Ciudad" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Ciudad.nombre, COUNT(Monitor.idCiudad) AS cantidad
+FROM            Ciudad INNER JOIN
+                         Monitor ON Ciudad.id = Monitor.idCiudad
+GROUP BY Ciudad.nombre</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="nombre" DataSetColumn="nombre" />
+              <Mapping SourceColumn="cantidad" DataSetColumn="cantidad" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -256,7 +276,7 @@ SELECT id, idUca, primerNombre, segundoNombre, primerApellido, segundoApellido, 
   <xs:element name="DBMonitoresDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DBMonitoresDataSet" msprop:Generator_UserDSName="DBMonitoresDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Ciudad" msprop:Generator_TableClassName="CiudadDataTable" msprop:Generator_TableVarName="tableCiudad" msprop:Generator_RowChangedName="CiudadRowChanged" msprop:Generator_TablePropName="Ciudad" msprop:Generator_RowDeletingName="CiudadRowDeleting" msprop:Generator_RowChangingName="CiudadRowChanging" msprop:Generator_RowEvHandlerName="CiudadRowChangeEventHandler" msprop:Generator_RowDeletedName="CiudadRowDeleted" msprop:Generator_RowClassName="CiudadRow" msprop:Generator_UserTableName="Ciudad" msprop:Generator_RowEvArgName="CiudadRowChangeEvent">
+        <xs:element name="Ciudad" msprop:Generator_TableClassName="CiudadDataTable" msprop:Generator_TableVarName="tableCiudad" msprop:Generator_TablePropName="Ciudad" msprop:Generator_RowDeletingName="CiudadRowDeleting" msprop:Generator_RowChangingName="CiudadRowChanging" msprop:Generator_RowEvHandlerName="CiudadRowChangeEventHandler" msprop:Generator_RowDeletedName="CiudadRowDeleted" msprop:Generator_UserTableName="Ciudad" msprop:Generator_RowChangedName="CiudadRowChanged" msprop:Generator_RowEvArgName="CiudadRowChangeEvent" msprop:Generator_RowClassName="CiudadRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -271,7 +291,7 @@ SELECT id, idUca, primerNombre, segundoNombre, primerApellido, segundoApellido, 
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Materia" msprop:Generator_TableClassName="MateriaDataTable" msprop:Generator_TableVarName="tableMateria" msprop:Generator_RowChangedName="MateriaRowChanged" msprop:Generator_TablePropName="Materia" msprop:Generator_RowDeletingName="MateriaRowDeleting" msprop:Generator_RowChangingName="MateriaRowChanging" msprop:Generator_RowEvHandlerName="MateriaRowChangeEventHandler" msprop:Generator_RowDeletedName="MateriaRowDeleted" msprop:Generator_RowClassName="MateriaRow" msprop:Generator_UserTableName="Materia" msprop:Generator_RowEvArgName="MateriaRowChangeEvent">
+        <xs:element name="Materia" msprop:Generator_TableClassName="MateriaDataTable" msprop:Generator_TableVarName="tableMateria" msprop:Generator_TablePropName="Materia" msprop:Generator_RowDeletingName="MateriaRowDeleting" msprop:Generator_RowChangingName="MateriaRowChanging" msprop:Generator_RowEvHandlerName="MateriaRowChangeEventHandler" msprop:Generator_RowDeletedName="MateriaRowDeleted" msprop:Generator_UserTableName="Materia" msprop:Generator_RowChangedName="MateriaRowChanged" msprop:Generator_RowEvArgName="MateriaRowChangeEvent" msprop:Generator_RowClassName="MateriaRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -286,7 +306,7 @@ SELECT id, idUca, primerNombre, segundoNombre, primerApellido, segundoApellido, 
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Monitor" msprop:Generator_TableClassName="MonitorDataTable" msprop:Generator_TableVarName="tableMonitor" msprop:Generator_RowChangedName="MonitorRowChanged" msprop:Generator_TablePropName="Monitor" msprop:Generator_RowDeletingName="MonitorRowDeleting" msprop:Generator_RowChangingName="MonitorRowChanging" msprop:Generator_RowEvHandlerName="MonitorRowChangeEventHandler" msprop:Generator_RowDeletedName="MonitorRowDeleted" msprop:Generator_RowClassName="MonitorRow" msprop:Generator_UserTableName="Monitor" msprop:Generator_RowEvArgName="MonitorRowChangeEvent">
+        <xs:element name="Monitor" msprop:Generator_TableClassName="MonitorDataTable" msprop:Generator_TableVarName="tableMonitor" msprop:Generator_TablePropName="Monitor" msprop:Generator_RowDeletingName="MonitorRowDeleting" msprop:Generator_RowChangingName="MonitorRowChanging" msprop:Generator_RowEvHandlerName="MonitorRowChangeEventHandler" msprop:Generator_RowDeletedName="MonitorRowDeleted" msprop:Generator_UserTableName="Monitor" msprop:Generator_RowChangedName="MonitorRowChanged" msprop:Generator_RowEvArgName="MonitorRowChangeEvent" msprop:Generator_RowClassName="MonitorRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -353,6 +373,20 @@ SELECT id, idUca, primerNombre, segundoNombre, primerApellido, segundoApellido, 
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="RptMonitorXCiudad" msprop:Generator_TableClassName="RptMonitorXCiudadDataTable" msprop:Generator_TableVarName="tableRptMonitorXCiudad" msprop:Generator_TablePropName="RptMonitorXCiudad" msprop:Generator_RowDeletingName="RptMonitorXCiudadRowDeleting" msprop:Generator_RowChangingName="RptMonitorXCiudadRowChanging" msprop:Generator_RowEvHandlerName="RptMonitorXCiudadRowChangeEventHandler" msprop:Generator_RowDeletedName="RptMonitorXCiudadRowDeleted" msprop:Generator_UserTableName="RptMonitorXCiudad" msprop:Generator_RowChangedName="RptMonitorXCiudadRowChanged" msprop:Generator_RowEvArgName="RptMonitorXCiudadRowChangeEvent" msprop:Generator_RowClassName="RptMonitorXCiudadRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cantidad" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
@@ -370,8 +404,8 @@ SELECT id, idUca, primerNombre, segundoNombre, primerApellido, segundoApellido, 
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK__Monitor__idCiuda__2A4B4B5E" msdata:parent="Ciudad" msdata:child="Monitor" msdata:parentkey="id" msdata:childkey="idCiudad" msprop:Generator_UserChildTable="Monitor" msprop:Generator_ChildPropName="GetMonitorRows" msprop:Generator_UserRelationName="FK__Monitor__idCiuda__2A4B4B5E" msprop:Generator_RelationVarName="relationFK__Monitor__idCiuda__2A4B4B5E" msprop:Generator_UserParentTable="Ciudad" msprop:Generator_ParentPropName="CiudadRow" />
-      <msdata:Relationship name="FK__Monitor__idMater__2B3F6F97" msdata:parent="Materia" msdata:child="Monitor" msdata:parentkey="id" msdata:childkey="idMateria" msprop:Generator_UserChildTable="Monitor" msprop:Generator_ChildPropName="GetMonitorRows" msprop:Generator_UserRelationName="FK__Monitor__idMater__2B3F6F97" msprop:Generator_RelationVarName="relationFK__Monitor__idMater__2B3F6F97" msprop:Generator_UserParentTable="Materia" msprop:Generator_ParentPropName="MateriaRow" />
+      <msdata:Relationship name="FK__Monitor__idCiuda__2A4B4B5E" msdata:parent="Ciudad" msdata:child="Monitor" msdata:parentkey="id" msdata:childkey="idCiudad" msprop:Generator_UserChildTable="Monitor" msprop:Generator_ChildPropName="GetMonitorRows" msprop:Generator_UserRelationName="FK__Monitor__idCiuda__2A4B4B5E" msprop:Generator_ParentPropName="CiudadRow" msprop:Generator_RelationVarName="relationFK__Monitor__idCiuda__2A4B4B5E" msprop:Generator_UserParentTable="Ciudad" />
+      <msdata:Relationship name="FK__Monitor__idMater__2B3F6F97" msdata:parent="Materia" msdata:child="Monitor" msdata:parentkey="id" msdata:childkey="idMateria" msprop:Generator_UserChildTable="Monitor" msprop:Generator_ChildPropName="GetMonitorRows" msprop:Generator_UserRelationName="FK__Monitor__idMater__2B3F6F97" msprop:Generator_ParentPropName="MateriaRow" msprop:Generator_RelationVarName="relationFK__Monitor__idMater__2B3F6F97" msprop:Generator_UserParentTable="Materia" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

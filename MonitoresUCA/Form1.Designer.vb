@@ -32,6 +32,7 @@ Partial Class Form1
         Me.MonitoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListadoDeMonitoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MonitoresPorCiudadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -54,7 +55,7 @@ Partial Class Form1
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(96, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'CatalogosToolStripMenuItem
@@ -67,24 +68,24 @@ Partial Class Form1
         'AsignaturasToolStripMenuItem
         '
         Me.AsignaturasToolStripMenuItem.Name = "AsignaturasToolStripMenuItem"
-        Me.AsignaturasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AsignaturasToolStripMenuItem.Size = New System.Drawing.Size(136, 22)
         Me.AsignaturasToolStripMenuItem.Text = "Asignaturas"
         '
         'CiudadesToolStripMenuItem
         '
         Me.CiudadesToolStripMenuItem.Name = "CiudadesToolStripMenuItem"
-        Me.CiudadesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CiudadesToolStripMenuItem.Size = New System.Drawing.Size(136, 22)
         Me.CiudadesToolStripMenuItem.Text = "Ciudades"
         '
         'MonitoresToolStripMenuItem
         '
         Me.MonitoresToolStripMenuItem.Name = "MonitoresToolStripMenuItem"
-        Me.MonitoresToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MonitoresToolStripMenuItem.Size = New System.Drawing.Size(136, 22)
         Me.MonitoresToolStripMenuItem.Text = "Monitores"
         '
         'ReportesToolStripMenuItem
         '
-        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListadoDeMonitoresToolStripMenuItem})
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListadoDeMonitoresToolStripMenuItem, Me.MonitoresPorCiudadToolStripMenuItem})
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
         Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
         Me.ReportesToolStripMenuItem.Text = "Reportes"
@@ -92,8 +93,14 @@ Partial Class Form1
         'ListadoDeMonitoresToolStripMenuItem
         '
         Me.ListadoDeMonitoresToolStripMenuItem.Name = "ListadoDeMonitoresToolStripMenuItem"
-        Me.ListadoDeMonitoresToolStripMenuItem.Size = New System.Drawing.Size(185, 22)
+        Me.ListadoDeMonitoresToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
         Me.ListadoDeMonitoresToolStripMenuItem.Text = "Listado de Monitores"
+        '
+        'MonitoresPorCiudadToolStripMenuItem
+        '
+        Me.MonitoresPorCiudadToolStripMenuItem.Name = "MonitoresPorCiudadToolStripMenuItem"
+        Me.MonitoresPorCiudadToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
+        Me.MonitoresPorCiudadToolStripMenuItem.Text = "Monitores por Ciudad"
         '
         'Form1
         '
@@ -122,4 +129,5 @@ Partial Class Form1
     Friend WithEvents MonitoresToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ListadoDeMonitoresToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MonitoresPorCiudadToolStripMenuItem As ToolStripMenuItem
 End Class

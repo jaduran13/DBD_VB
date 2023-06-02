@@ -21,4 +21,12 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub MonitoresPorCiudadToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MonitoresPorCiudadToolStripMenuItem.Click
+        Dim tbl As New DataTable
+        Dim reporte As New DBMonitoresDataSetTableAdapters.RptMonitorXCiudadTableAdapter
+
+        tbl = reporte.GetData
+        VerReporte(tbl, "DataSet1", "reportes\RptMonitorXCiudad.rdlc")
+    End Sub
 End Class

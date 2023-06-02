@@ -97,6 +97,11 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:MonitoresUCA.DBMonitoresDataSet.RptMonitorXCiudadDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:MonitoresUCA.DBMonitoresDataSet.CiudadRow">
 <summary>
 Represents strongly named DataRow class.
@@ -108,6 +113,11 @@ Represents strongly named DataRow class.
 </summary>
 </member>
 <member name="T:MonitoresUCA.DBMonitoresDataSet.MonitorRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:MonitoresUCA.DBMonitoresDataSet.RptMonitorXCiudadRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -127,6 +137,11 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
+<member name="T:MonitoresUCA.DBMonitoresDataSet.RptMonitorXCiudadRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:MonitoresUCA.DBMonitoresDataSetTableAdapters.CiudadTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
@@ -138,6 +153,11 @@ Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
 <member name="T:MonitoresUCA.DBMonitoresDataSetTableAdapters.MonitorTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:MonitoresUCA.DBMonitoresDataSetTableAdapters.RptMonitorXCiudadTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
